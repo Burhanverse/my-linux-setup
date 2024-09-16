@@ -12,4 +12,4 @@
 
 - [Youtube Music Installer](https://github.com/Burhanverse/my-linux-setup/blob/master/YTM_RPM_Installer.md)
 
-- [Link WezTerm](https://github.com/Burhanverse/my-linux-setup/blob/master/link_wezterm.md)
+- [Setup WezTerm](https://github.com/Burhanverse/my-linux-setup/blob/master/setup_wezterm.md)

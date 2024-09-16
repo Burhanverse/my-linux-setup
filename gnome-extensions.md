@@ -14,7 +14,8 @@ You might need [Extension Manager](https://flathub.org/apps/com.mattjakeman.Exte
 
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/): GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
 
-- [Open Bar](https://extensions.gnome.org/extension/6580/open-bar/): Top Bar / Top Panel , Menus , Dash / Dock , Gnome Shell , Gtk Apps theming. Open the bar and let the colors 🍹 flow.
+- [Open Bar](https://extensions.gnome.org/extension/6580/open-bar/): Top Bar / Top Panel , Menus , Dash / Dock , Gnome Shell , Gtk Apps theming. Open the bar and let the colors 🍹 flow.  
+Here's my [openbar_config](https://github.com/Burhanverse/my-linux-setup/blob/master/configs/openbar_config) download and import it.
 
 - [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/): Let's tweak gnome 43's quick settings! You can add Media Controls, Notifications, Volume Mixer on quick settings and remove useless buttons! (Works on GNOME 46)
 
