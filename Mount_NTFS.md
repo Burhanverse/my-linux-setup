@@ -37,6 +37,14 @@ Here my NTFS partitions are `/dev/nvme0n1p3` and `/dev/nvme0n1p4`.
  mount | grep ntfs
 ```
 ---
+#### Change Ownership to your username
+Here in my case `aqua` is my username,
+```
+sudo chown -R aqua:aqua /mnt/ntfs_partition3
+sudo chown -R aqua:aqua /mnt/ntfs_partition4
+```
+This command will recursively change the ownership of all files and directories inside the mount point.
+---
 #### Mount NTFS partition automatically
 - To make the NTFS partition mount automatically on startup, we’ll need to add a line to the `/etc/fstab` file on our system. Use `nano` or your favorite text editor to open it up under root permissions.
 ```
@@ -44,14 +52,15 @@ Here my NTFS partitions are `/dev/nvme0n1p3` and `/dev/nvme0n1p4`.
 ```
 Then, add the following line to the file, while substituting your own device directory and mount path.
 ```
-/dev/nvme0n1p4  /mnt/ntfs_partition4  ntfs3  auto,nosuid,nodev,nofail,x-gvfs-show  0  0
-/dev/nvme0n1p3  /mnt/ntfs_partition3  ntfs3  auto,nosuid,nodev,nofail,x-gvfs-show  0  0
+/dev/nvme0n1p4  /mnt/ntfs_partition4  ntfs-3g  auto,nodev,nofail,x-gvfs-show,uid=1000,gid=1000,umask=000  0  0
+/dev/nvme0n1p3  /mnt/ntfs_partition3  ntfs-3g  auto,nodev,nofail,x-gvfs-show,uid=1000,gid=1000,umask=000  0  0
 ```
 - Explanation
 File System Type (ntfs3): This uses the Paragon ntfs3 driver, which provides better support for NTFS file systems in the Linux kernel.
 Mount Options:
 - `auto`: Mount automatically at boot.
-- `nosuid`: Do not allow set-user-identifier or set-group-identifier bits to take effect.
+- `uid`: Your user ID.
+- `gid`: Your group ID. You can find your uid and gid by running `id <username>`.
 - `nodev`: Do not interpret character or block special devices on the file system.
 - `nofail`: Do not fail the boot process if the file system cannot be mounted.
 - `x-gvfs-show`: Make the partition visible in GNOME-based file managers.
