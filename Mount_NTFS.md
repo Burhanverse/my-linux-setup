@@ -1,4 +1,4 @@
-### MY way of `mounting` NTFS partions to Linux
+### MY way of `mounting` NTFS partions to Linux with full RW permissions.
 ---
 #### Prerequisties:
 - To install ntfs-3g and fuse on `Ubuntu`, `Debian`, and `Linux Mint`:
@@ -44,6 +44,7 @@ sudo chown -R aqua:aqua /mnt/ntfs_partition3
 sudo chown -R aqua:aqua /mnt/ntfs_partition4
 ```
 This command will recursively change the ownership of all files and directories inside the mount point.
+
 ---
 #### Mount NTFS partition automatically
 - To make the NTFS partition mount automatically on startup, we’ll need to add a line to the `/etc/fstab` file on our system. Use `nano` or your favorite text editor to open it up under root permissions.
@@ -61,6 +62,7 @@ Mount Options:
 - `auto`: Mount automatically at boot.
 - `uid`: Your user ID.
 - `gid`: Your group ID. You can find your uid and gid by running `id <username>`.
+- `umask`: Set the permission for the drive.
 - `nodev`: Do not interpret character or block special devices on the file system.
 - `nofail`: Do not fail the boot process if the file system cannot be mounted.
 - `x-gvfs-show`: Make the partition visible in GNOME-based file managers.
