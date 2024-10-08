@@ -10,6 +10,8 @@ You might need [Extension Manager](https://flathub.org/apps/com.mattjakeman.Exte
 
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine): Disable the screensaver and auto suspend
 
+- [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/): Gnome Clipboard History is a clipboard manager GNOME extension that saves items you've copied into an easily accessible, searchable history panel.
+
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock): A dock for the Gnome Shell. This extension moves the dash out of the overview transforming it in a dock for an easier launching of applications and a faster switching between windows and desktops. Side and bottom placement options are available.
 
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/): GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
